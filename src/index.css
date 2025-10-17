@@ -245,9 +245,13 @@ All colors MUST be HSL.
 
   /* Enhanced Text Gradients - 2025 Premium */
   .text-gradient {
-    @apply bg-clip-text text-transparent font-bold;
+    @apply font-bold;
     background: linear-gradient(135deg, hsl(267 57% 51%), hsl(267 72% 67%), hsl(43 88% 60%));
     background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: hsl(267 57% 51%); /* Fallback color */
     animation: gradient-shift 8s ease infinite;
   }
   
