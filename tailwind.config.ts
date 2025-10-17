@@ -65,12 +65,15 @@ export default {
       backgroundImage: {
         'gradient-hero': 'var(--gradient-hero)',
         'gradient-accent': 'var(--gradient-accent)',
-        'gradient-dark': 'var(--gradient-dark)',
+        'gradient-glass': 'var(--gradient-glass)',
+        'gradient-premium': 'var(--gradient-premium)',
       },
       boxShadow: {
         'soft': 'var(--shadow-soft)',
         'gold': 'var(--shadow-gold)',
         'premium': 'var(--shadow-premium)',
+        'glass': 'var(--shadow-glass)',
+        'elevated': 'var(--shadow-elevated)',
       },
       keyframes: {
         "accordion-down": {
@@ -93,6 +96,14 @@ export default {
           "0%, 100%": { opacity: "0.3", transform: "scale(1) rotate(0deg)" },
           "50%": { opacity: "1", transform: "scale(1.2) rotate(180deg)" },
         },
+        glow: {
+          "0%, 100%": { opacity: "0.5", filter: "blur(20px)" },
+          "50%": { opacity: "1", filter: "blur(30px)" },
+        },
+        shimmer: {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(100%)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -100,6 +111,8 @@ export default {
         "fade-in": "fadeIn 0.8s ease-out",
         "slide-up": "slideUp 0.6s ease-out",
         "sparkle": "sparkle 2s ease-in-out infinite",
+        "shimmer": "shimmer 2s ease-in-out infinite",
+        "glow": "glow 3s ease-in-out infinite",
       },
     },
   },

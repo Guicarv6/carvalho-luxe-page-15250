@@ -23,12 +23,13 @@ const Authority = () => {
   ];
 
   return (
-    <section className="section-padding bg-gradient-to-b from-primary-pastel/50 via-background to-background">
-      <div className="container-custom">
+    <section className="section-padding bg-gradient-to-b from-primary-pastel/50 via-background to-background relative overflow-hidden">
+      <div className="absolute inset-0 pattern-dots opacity-8" />
+      <div className="container-custom relative z-10">
         <div className="text-center mb-14 md:mb-16 animate-fade-in">
           <p className="text-base md:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed px-4">
-            O método <span className="font-semibold text-primary">Lash Premium 2.0</span> já ajudou centenas de mulheres 
-            a construírem <span className="font-semibold text-foreground">renda, autoestima e propósito</span> — com cílios de alto 
+            O método <span className="font-bold text-primary">Lash Premium 2.0</span> já ajudou centenas de mulheres 
+            a construírem <span className="font-bold text-foreground">renda, autoestima e propósito</span> — com cílios de alto 
             padrão e atendimento inesquecível.
           </p>
         </div>
@@ -40,15 +41,15 @@ const Authority = () => {
               className="text-center group animate-fade-in px-4"
               style={{ animationDelay: `${index * 80}ms` }}
             >
-              <div className="inline-flex items-center justify-center w-16 h-16 md:w-20 md:h-20 rounded-full bg-gradient-to-br from-primary to-primary-light mb-5 md:mb-6 group-hover:scale-110 transition-transform duration-300 shadow-md group-hover:shadow-lg">
-                <metric.icon className="w-8 h-8 md:w-10 md:h-10 text-white" />
+              <div className="inline-flex items-center justify-center w-16 h-16 md:w-20 md:h-20 rounded-full bg-gradient-premium mb-5 md:mb-6 group-hover:scale-110 transition-all duration-500 shadow-premium group-hover:shadow-elevated">
+                <metric.icon className="w-8 h-8 md:w-10 md:h-10 text-white drop-shadow-lg" />
               </div>
               
-              <div className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-gradient mb-3">
+              <div className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-gradient mb-3 drop-shadow-sm">
                 {metric.number}
               </div>
               
-              <div className="text-lg md:text-xl font-semibold mb-2 text-foreground">
+              <div className="text-lg md:text-xl font-bold mb-2 text-foreground">
                 {metric.label}
               </div>
               
