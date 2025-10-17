@@ -8,47 +8,47 @@ const Story = () => {
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-white/30 via-transparent to-transparent pointer-events-none" />
       
       <div className="container-custom relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center max-w-7xl mx-auto">
           <div className="relative animate-fade-in order-2 lg:order-1">
             <div className="relative">
-              <div className="absolute -top-6 -left-6 md:-top-8 md:-left-8 w-28 h-28 md:w-32 md:h-32 bg-gradient-to-br from-secondary/30 to-primary/30 rounded-full blur-2xl animate-glow" />
-              <div className="absolute -bottom-6 -right-6 md:-bottom-8 md:-right-8 w-32 h-32 md:w-40 md:h-40 bg-gradient-to-br from-primary/30 to-secondary/30 rounded-full blur-2xl animate-glow" style={{ animationDelay: '1s' }} />
-              <div className="relative rounded-[3rem] overflow-hidden shadow-elevated border-4 border-white/80 backdrop-blur-sm">
+              <div className="absolute -top-8 -left-8 md:-top-10 md:-left-10 w-32 h-32 md:w-40 md:h-40 bg-gradient-to-br from-secondary/30 to-primary/30 rounded-full blur-3xl animate-glow" />
+              <div className="absolute -bottom-8 -right-8 md:-bottom-10 md:-right-10 w-36 h-36 md:w-44 md:h-44 bg-gradient-to-br from-primary/30 to-secondary/30 rounded-full blur-3xl animate-glow" style={{ animationDelay: '1s' }} />
+              <div className="relative rounded-[3rem] overflow-hidden shadow-elevated border-4 border-white/80 backdrop-blur-sm hover:border-white/90 hover:shadow-2xl transition-all duration-500">
                 <img src={daniellyImage} alt="Danielly Carvalho - Fundadora do Método Lash Premium" className="w-full h-auto object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/10 via-transparent to-transparent pointer-events-none" />
               </div>
-              <div className="absolute -bottom-4 -right-4 md:-bottom-6 md:-right-6 premium-card rounded-2xl p-4 md:p-6 max-w-[260px] animate-float">
-                <Heart className="w-6 h-6 md:w-8 md:h-8 text-secondary mb-2 drop-shadow-lg" />
-                <p className="text-xs md:text-sm font-bold text-foreground leading-snug">"Minha missão é empoderar mulheres"</p>
+              <div className="absolute -bottom-5 -right-5 md:-bottom-7 md:-right-7 premium-card rounded-2xl p-5 md:p-7 max-w-[280px] animate-float hover:scale-105 transition-transform duration-300 cursor-default">
+                <Heart className="w-7 h-7 md:w-9 md:h-9 text-secondary mb-3 drop-shadow-lg" style={{ animation: 'scale-pulse 2s ease-in-out infinite' }} />
+                <p className="text-sm md:text-base font-bold text-foreground leading-relaxed">"Minha missão é empoderar mulheres"</p>
               </div>
             </div>
           </div>
 
-          <div className="space-y-6 md:space-y-8 animate-slide-up order-1 lg:order-2">
-            <div className="inline-flex items-center gap-2 px-5 md:px-6 py-2 md:py-2.5 rounded-full glass-card shadow-glass">
-              <Sparkles className="w-4 h-4 text-primary animate-sparkle" />
-              <span className="font-bold text-xs md:text-sm text-foreground tracking-wide">Minha História</span>
+          <div className="space-y-7 md:space-y-9 animate-slide-up order-1 lg:order-2">
+            <div className="inline-flex items-center gap-3 px-6 md:px-7 py-3 md:py-3.5 rounded-full glass-card shadow-glass">
+              <Sparkles className="w-5 h-5 text-primary animate-sparkle" />
+              <span className="font-bold text-sm md:text-base text-foreground tracking-wide">Minha História</span>
             </div>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-heading font-bold leading-[1.1] tracking-tight">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-heading font-bold leading-[1.08] tracking-tight">
               De sonho à <span className="text-gradient drop-shadow-md">realidade</span>
             </h2>
-            <div className="space-y-5 md:space-y-6 text-base md:text-lg text-muted-foreground leading-relaxed">
-              <p className="text-lg md:text-xl font-light italic text-foreground/90 backdrop-blur-sm">"Eu comecei exatamente onde você está agora..."</p>
+            <div className="space-y-6 md:space-y-7 text-lg md:text-xl text-muted-foreground leading-relaxed">
+              <p className="text-xl md:text-2xl font-light italic text-foreground/90 backdrop-blur-sm">"Eu comecei exatamente onde você está agora..."</p>
               <p>Cheia de dúvidas, insegurança e sem saber se realmente conseguiria viver do que amava. 
                 Mas descobri que <span className="font-bold text-foreground">técnica + propósito + mentalidade</span> podem 
                 transformar não apenas olhares, mas vidas inteiras.</p>
               <p>Hoje, depois de <span className="font-bold text-foreground">formar mais de 300 profissionais</span> e 
                 transformar milhares de olhares, eu sei que você também pode alcançar a <span className="font-bold text-foreground">liberdade financeira</span> e 
                 a <span className="font-bold text-foreground">realização profissional</span> que merece.</p>
-              <div className="premium-card rounded-2xl p-5 md:p-6 border-l-4 border-primary">
-                <p className="text-lg md:text-xl font-bold text-foreground mb-2">Você não precisa fazer isso sozinha.</p>
-                <p className="text-sm md:text-base font-medium">Vou te guiar em cada passo dessa jornada de transformação.</p>
+              <div className="premium-card rounded-2xl p-6 md:p-8 border-l-4 border-primary hover:scale-[1.02] transition-transform duration-300">
+                <p className="text-xl md:text-2xl font-bold text-foreground mb-3">Você não precisa fazer isso sozinha.</p>
+                <p className="text-base md:text-lg font-medium">Vou te guiar em cada passo dessa jornada de transformação.</p>
               </div>
             </div>
-            <div className="pt-4">
+            <div className="pt-5 md:pt-6">
               <a href="https://wa.me/5562991109018" target="_blank" rel="noopener noreferrer" className="btn-primary">
                 <span>Transformar minha carreira</span>
-                <Sparkles className="w-5 h-5" />
+                <Sparkles className="w-6 h-6 group-hover:rotate-12 transition-transform" />
               </a>
             </div>
           </div>

@@ -49,18 +49,18 @@ const Testimonials = () => {
   return (
     <section className="section-padding bg-gradient-to-b from-primary-pastel/40 via-background to-background">
       <div className="container-custom">
-        <div className="text-center mb-14 md:mb-16 animate-fade-in">
-          <div className="inline-flex items-center gap-2 text-secondary mb-4">
-            <Star className="w-5 h-5 md:w-6 md:h-6" />
-            <span className="text-xs md:text-sm font-semibold uppercase tracking-wider">Resultados Reais</span>
+        <div className="text-center mb-16 md:mb-20 animate-fade-in max-w-4xl mx-auto">
+          <div className="inline-flex items-center gap-2 text-secondary mb-5 md:mb-6">
+            <Star className="w-6 h-6 md:w-7 md:h-7 fill-secondary" style={{ animation: 'scale-pulse 2s ease-in-out infinite' }} />
+            <span className="text-sm md:text-base font-semibold uppercase tracking-wider">Resultados Reais</span>
           </div>
           
-          <h2 className="text-2xl md:text-4xl lg:text-5xl font-heading font-bold mb-5 md:mb-6 tracking-tight px-4">
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 md:mb-8 tracking-tight px-4">
             Elas começaram do zero e{" "}
             <span className="text-gradient">hoje vivem do Lash</span>
           </h2>
           
-          <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto px-6">
             Você pode ser a próxima
           </p>
         </div>
@@ -72,45 +72,45 @@ const Testimonials = () => {
           }}
           className="w-full"
         >
-          <CarouselContent className="-ml-4">
+          <CarouselContent className="-ml-5">
             {testimonials.map((testimonial, index) => (
-              <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
-                <div className="card-premium h-full">
-                  <div className="space-y-5 md:space-y-6">
+              <CarouselItem key={index} className="pl-5 md:basis-1/2 lg:basis-1/3">
+                <div className="card-premium h-full hover:scale-[1.02] transition-all duration-300">
+                  <div className="space-y-6">
                     {/* Quote Icon */}
-                    <Quote className="w-8 h-8 md:w-10 md:h-10 text-primary/25" />
+                    <Quote className="w-10 h-10 md:w-12 md:h-12 text-primary/25" />
 
                     {/* Rating */}
-                    <div className="flex gap-1">
+                    <div className="flex gap-1.5">
                       {[...Array(testimonial.rating)].map((_, i) => (
                         <Star
                           key={i}
-                          className="w-4 h-4 md:w-5 md:h-5 fill-secondary text-secondary"
+                          className="w-5 h-5 md:w-6 md:h-6 fill-secondary text-secondary"
                         />
                       ))}
                     </div>
 
                     {/* Testimonial Text */}
-                    <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+                    <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                       "{testimonial.text}"
                     </p>
 
                     {/* Result Badge */}
-                    <div className="inline-block bg-gradient-to-r from-primary/15 to-secondary/15 px-4 py-2 rounded-full border border-primary/25 shadow-sm">
-                      <p className="text-xs md:text-sm font-semibold text-foreground">
+                    <div className="inline-block bg-gradient-to-r from-primary/15 to-secondary/15 px-5 py-3 rounded-full border border-primary/25 shadow-md hover:shadow-lg transition-shadow">
+                      <p className="text-sm md:text-base font-semibold text-foreground">
                         ✨ {testimonial.result}
                       </p>
                     </div>
 
                     {/* Author */}
-                    <div className="pt-4 border-t border-border/50">
-                      <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white font-bold text-base md:text-lg flex-shrink-0 shadow-md">
+                    <div className="pt-5 border-t border-border/50">
+                      <div className="flex items-center gap-4">
+                        <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white font-bold text-lg md:text-xl flex-shrink-0 shadow-md">
                           {testimonial.name.charAt(0)}
                         </div>
                         <div>
-                          <p className="font-semibold text-sm md:text-base">{testimonial.name}</p>
-                          <p className="text-xs md:text-sm text-muted-foreground">{testimonial.role}</p>
+                          <p className="font-semibold text-base md:text-lg">{testimonial.name}</p>
+                          <p className="text-sm md:text-base text-muted-foreground">{testimonial.role}</p>
                         </div>
                       </div>
                     </div>
@@ -119,24 +119,24 @@ const Testimonials = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <div className="flex justify-center gap-2 mt-8">
+          <div className="flex justify-center gap-3 mt-10">
             <CarouselPrevious className="static translate-y-0" />
             <CarouselNext className="static translate-y-0" />
           </div>
         </Carousel>
 
-        <div className="text-center mt-12 animate-fade-in">
-          <p className="text-muted-foreground mb-6">
+        <div className="text-center mt-14 md:mt-16 animate-fade-in">
+          <p className="text-lg md:text-xl text-muted-foreground mb-7 md:mb-8">
             Seja a próxima história de sucesso
           </p>
           <a
             href="https://wa.me/5562991109018"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-gold inline-flex items-center gap-2"
+            className="btn-gold inline-flex items-center gap-3 text-lg"
           >
             <span>Quero Minha Transformação</span>
-            <Star className="w-5 h-5 fill-current" />
+            <Star className="w-6 h-6 fill-current" />
           </a>
         </div>
       </div>

@@ -1,8 +1,12 @@
 import { ArrowRight, Sparkles, Play } from "lucide-react";
 import heroImage from "@/assets/danielly-professional.jpg";
+import { useCounterAnimation } from "@/hooks/use-counter-animation";
 
 const Hero = () => {
   const whatsappUrl = "https://wa.me/5562991109018";
+  const profissionais = useCounterAnimation(300, 2500);
+  const olhares = useCounterAnimation(1000, 2500);
+  const satisfacao = useCounterAnimation(98, 2500);
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-hero">
@@ -46,18 +50,24 @@ const Hero = () => {
               </button>
             </div>
 
-            <div className="grid grid-cols-3 gap-6 md:gap-8 pt-6 md:pt-8 border-t border-white/20 backdrop-blur-sm">
-              <div className="text-center md:text-left group">
-                <div className="text-3xl md:text-4xl font-bold text-secondary drop-shadow-[0_4px_16px_rgba(232,162,47,0.6)] group-hover:scale-110 transition-transform duration-500">300+</div>
-                <div className="text-xs md:text-sm text-white/90 mt-1 font-medium">Profissionais formadas</div>
+            <div className="grid grid-cols-3 gap-6 md:gap-10 pt-8 md:pt-10 border-t border-white/20 backdrop-blur-sm">
+              <div className="text-center md:text-left group cursor-default">
+                <div className="text-3xl md:text-4xl lg:text-5xl font-bold text-secondary drop-shadow-[0_4px_16px_rgba(232,162,47,0.6)] group-hover:scale-110 transition-all duration-500">
+                  {profissionais}+
+                </div>
+                <div className="text-xs md:text-sm text-white/90 mt-2 font-medium">Profissionais formadas</div>
               </div>
-              <div className="text-center md:text-left group">
-                <div className="text-3xl md:text-4xl font-bold text-secondary drop-shadow-[0_4px_16px_rgba(232,162,47,0.6)] group-hover:scale-110 transition-transform duration-500">1000+</div>
-                <div className="text-xs md:text-sm text-white/90 mt-1 font-medium">Olhares transformados</div>
+              <div className="text-center md:text-left group cursor-default">
+                <div className="text-3xl md:text-4xl lg:text-5xl font-bold text-secondary drop-shadow-[0_4px_16px_rgba(232,162,47,0.6)] group-hover:scale-110 transition-all duration-500">
+                  {olhares}+
+                </div>
+                <div className="text-xs md:text-sm text-white/90 mt-2 font-medium">Olhares transformados</div>
               </div>
-              <div className="text-center md:text-left group">
-                <div className="text-3xl md:text-4xl font-bold text-secondary drop-shadow-[0_4px_16px_rgba(232,162,47,0.6)] group-hover:scale-110 transition-transform duration-500">98%</div>
-                <div className="text-xs md:text-sm text-white/90 mt-1 font-medium">Satisfação</div>
+              <div className="text-center md:text-left group cursor-default">
+                <div className="text-3xl md:text-4xl lg:text-5xl font-bold text-secondary drop-shadow-[0_4px_16px_rgba(232,162,47,0.6)] group-hover:scale-110 transition-all duration-500">
+                  {satisfacao}%
+                </div>
+                <div className="text-xs md:text-sm text-white/90 mt-2 font-medium">Satisfação</div>
               </div>
             </div>
           </div>
@@ -65,18 +75,18 @@ const Hero = () => {
           <div className="relative lg:block hidden animate-fade-in" style={{ animationDelay: '0.2s' }}>
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-secondary/40 to-primary-light/40 rounded-[3rem] blur-3xl transform scale-105 animate-glow" />
-              <div className="relative rounded-[3rem] overflow-hidden border-4 border-white/30 shadow-elevated backdrop-blur-sm">
+              <div className="relative rounded-[3rem] overflow-hidden border-4 border-white/30 shadow-elevated backdrop-blur-sm hover:border-white/40 transition-all duration-500">
                 <img src={heroImage} alt="Danielly Carvalho - Especialista em Extensão de Cílios" className="w-full h-auto object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/40 via-transparent to-transparent" />
               </div>
-              <div className="absolute -bottom-6 -right-6 premium-card rounded-2xl p-5 md:p-6 animate-float max-w-[200px]">
+              <div className="absolute -bottom-6 -right-6 premium-card rounded-2xl p-6 animate-float max-w-[220px] hover:scale-105 transition-transform duration-300">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-gradient-premium flex items-center justify-center flex-shrink-0 shadow-premium">
-                    <Sparkles className="w-5 h-5 md:w-6 md:h-6 text-white animate-sparkle" />
+                  <div className="w-12 h-12 rounded-full bg-gradient-premium flex items-center justify-center flex-shrink-0 shadow-premium">
+                    <Sparkles className="w-6 h-6 text-white" style={{ animation: 'icon-bounce 2s ease-in-out infinite' }} />
                   </div>
                   <div>
-                    <div className="font-bold text-sm md:text-base text-foreground">Certificação</div>
-                    <div className="text-xs md:text-sm text-muted-foreground">Premium Garantida</div>
+                    <div className="font-bold text-base text-foreground">Certificação</div>
+                    <div className="text-sm text-muted-foreground">Premium Garantida</div>
                   </div>
                 </div>
               </div>

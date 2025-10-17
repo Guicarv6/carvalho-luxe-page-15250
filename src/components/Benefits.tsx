@@ -47,40 +47,40 @@ const Benefits = () => {
   return (
     <section className="section-padding bg-gradient-to-b from-background via-muted/20 to-background">
       <div className="container-custom">
-        <div className="text-center mb-14 md:mb-16 animate-fade-in">
-          <div className="inline-flex items-center gap-2 text-secondary mb-4">
-            <Sparkles className="w-5 h-5 md:w-6 md:h-6" />
-            <span className="text-xs md:text-sm font-semibold uppercase tracking-wider">Método Lash Premium</span>
+        <div className="text-center mb-16 md:mb-20 animate-fade-in max-w-4xl mx-auto">
+          <div className="inline-flex items-center gap-2 text-secondary mb-5 md:mb-6">
+            <Sparkles className="w-6 h-6 md:w-7 md:h-7" style={{ animation: 'icon-bounce 2s ease-in-out infinite' }} />
+            <span className="text-sm md:text-base font-semibold uppercase tracking-wider">Método Lash Premium</span>
           </div>
           
-          <h2 className="text-2xl md:text-4xl lg:text-5xl font-heading font-bold mb-5 md:mb-6 tracking-tight px-4">
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 md:mb-8 tracking-tight px-4">
             Por Que Escolher o{" "}
             <span className="text-gradient">Lash Premium?</span>
           </h2>
           
-          <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto px-4 leading-relaxed">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-6 leading-relaxed">
             Um método completo que vai além da técnica. Aqui você aprende a construir uma carreira 
             de sucesso e impactar vidas através da sua arte.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           {benefits.map((benefit, index) => (
             <div
               key={index}
-              className="card-premium group animate-fade-in"
-              style={{ animationDelay: `${index * 40}ms` }}
+              className="card-premium group animate-fade-in hover:scale-105 transition-all duration-300"
+              style={{ animationDelay: `${index * 50}ms` }}
             >
-              <div className="flex flex-col items-center text-center space-y-3 md:space-y-4">
-                <div className="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-md">
-                  <benefit.icon className="w-6 h-6 md:w-7 md:h-7 text-white" />
+              <div className="flex flex-col items-center text-center space-y-4">
+                <div className="w-16 h-16 md:w-18 md:h-18 rounded-2xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-premium">
+                  <benefit.icon className="w-8 h-8 md:w-9 md:h-9 text-white" />
                 </div>
                 
-                <h3 className="text-lg md:text-xl font-heading font-semibold leading-snug">
+                <h3 className="text-xl md:text-2xl font-heading font-semibold leading-snug">
                   {benefit.title}
                 </h3>
                 
-                <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+                <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                   {benefit.description}
                 </p>
               </div>
@@ -88,15 +88,15 @@ const Benefits = () => {
           ))}
         </div>
 
-        <div className="text-center mt-16 animate-fade-in">
+        <div className="text-center mt-16 md:mt-20 animate-fade-in">
           <a
             href="https://wa.me/5562991109018"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-hero inline-flex items-center gap-2"
+            className="btn-hero inline-flex items-center gap-3 text-lg"
           >
             <span>Quero Transformar Minha Carreira</span>
-            <Sparkles className="w-5 h-5" />
+            <Sparkles className="w-6 h-6 group-hover:rotate-12 transition-transform" />
           </a>
         </div>
       </div>

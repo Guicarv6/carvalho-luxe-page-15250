@@ -389,3 +389,21 @@ All colors MUST be HSL.
     box-shadow: 0 0 40px hsl(267 55% 50% / 0.6);
   }
 }
+
+@keyframes icon-bounce {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(5deg);
+  }
+}
+
+@keyframes scale-pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}

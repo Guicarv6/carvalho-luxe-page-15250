@@ -104,6 +104,18 @@ export default {
           "0%": { transform: "translateX(-100%)" },
           "100%": { transform: "translateX(100%)" },
         },
+        float: {
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-12px)" },
+        },
+        iconBounce: {
+          "0%, 100%": { transform: "translateY(0) rotate(0deg)" },
+          "50%": { transform: "translateY(-8px) rotate(5deg)" },
+        },
+        scalePulse: {
+          "0%, 100%": { transform: "scale(1)" },
+          "50%": { transform: "scale(1.05)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -113,6 +125,9 @@ export default {
         "sparkle": "sparkle 2s ease-in-out infinite",
         "shimmer": "shimmer 2s ease-in-out infinite",
         "glow": "glow 3s ease-in-out infinite",
+        "float": "float 6s ease-in-out infinite",
+        "icon-bounce": "iconBounce 2s ease-in-out infinite",
+        "scale-pulse": "scalePulse 2s ease-in-out infinite",
       },
     },
   },
