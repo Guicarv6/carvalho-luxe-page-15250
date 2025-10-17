@@ -47,20 +47,20 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="section-padding bg-[hsl(270,100%,99%)]">
+    <section className="section-padding bg-gradient-to-b from-primary-pastel/40 via-background to-background">
       <div className="container-custom">
-        <div className="text-center mb-16 animate-fade-in">
+        <div className="text-center mb-14 md:mb-16 animate-fade-in">
           <div className="inline-flex items-center gap-2 text-secondary mb-4">
-            <Star className="w-6 h-6" />
-            <span className="text-sm font-semibold uppercase tracking-wider">Resultados Reais</span>
+            <Star className="w-5 h-5 md:w-6 md:h-6" />
+            <span className="text-xs md:text-sm font-semibold uppercase tracking-wider">Resultados Reais</span>
           </div>
           
-          <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
+          <h2 className="text-2xl md:text-4xl lg:text-5xl font-heading font-bold mb-5 md:mb-6 tracking-tight px-4">
             Elas começaram do zero e{" "}
             <span className="text-gradient">hoje vivem do Lash</span>
           </h2>
           
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
             Você pode ser a próxima
           </p>
         </div>
@@ -76,41 +76,41 @@ const Testimonials = () => {
             {testimonials.map((testimonial, index) => (
               <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
                 <div className="card-premium h-full">
-                  <div className="space-y-6">
+                  <div className="space-y-5 md:space-y-6">
                     {/* Quote Icon */}
-                    <Quote className="w-10 h-10 text-primary/30" />
+                    <Quote className="w-8 h-8 md:w-10 md:h-10 text-primary/25" />
 
                     {/* Rating */}
                     <div className="flex gap-1">
                       {[...Array(testimonial.rating)].map((_, i) => (
                         <Star
                           key={i}
-                          className="w-5 h-5 fill-secondary text-secondary"
+                          className="w-4 h-4 md:w-5 md:h-5 fill-secondary text-secondary"
                         />
                       ))}
                     </div>
 
                     {/* Testimonial Text */}
-                    <p className="text-muted-foreground leading-relaxed">
+                    <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
                       "{testimonial.text}"
                     </p>
 
                     {/* Result Badge */}
-                    <div className="inline-block bg-gradient-to-r from-primary/20 to-secondary/20 px-4 py-2 rounded-full border border-primary/30">
-                      <p className="text-sm font-semibold text-foreground">
+                    <div className="inline-block bg-gradient-to-r from-primary/15 to-secondary/15 px-4 py-2 rounded-full border border-primary/25 shadow-sm">
+                      <p className="text-xs md:text-sm font-semibold text-foreground">
                         ✨ {testimonial.result}
                       </p>
                     </div>
 
                     {/* Author */}
-                    <div className="pt-4 border-t border-border">
+                    <div className="pt-4 border-t border-border/50">
                       <div className="flex items-center gap-3">
-                        <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-foreground font-bold text-lg">
+                        <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white font-bold text-base md:text-lg flex-shrink-0 shadow-md">
                           {testimonial.name.charAt(0)}
                         </div>
                         <div>
-                          <p className="font-semibold">{testimonial.name}</p>
-                          <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                          <p className="font-semibold text-sm md:text-base">{testimonial.name}</p>
+                          <p className="text-xs md:text-sm text-muted-foreground">{testimonial.role}</p>
                         </div>
                       </div>
                     </div>

@@ -45,42 +45,42 @@ const Benefits = () => {
   ];
 
   return (
-    <section className="section-padding bg-gradient-to-b from-muted/30 to-background">
+    <section className="section-padding bg-gradient-to-b from-background via-muted/20 to-background">
       <div className="container-custom">
-        <div className="text-center mb-16 animate-fade-in">
+        <div className="text-center mb-14 md:mb-16 animate-fade-in">
           <div className="inline-flex items-center gap-2 text-secondary mb-4">
-            <Sparkles className="w-6 h-6" />
-            <span className="text-sm font-semibold uppercase tracking-wider">Método Lash Premium</span>
+            <Sparkles className="w-5 h-5 md:w-6 md:h-6" />
+            <span className="text-xs md:text-sm font-semibold uppercase tracking-wider">Método Lash Premium</span>
           </div>
           
-          <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
+          <h2 className="text-2xl md:text-4xl lg:text-5xl font-heading font-bold mb-5 md:mb-6 tracking-tight px-4">
             Por Que Escolher o{" "}
             <span className="text-gradient">Lash Premium?</span>
           </h2>
           
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto px-4 leading-relaxed">
             Um método completo que vai além da técnica. Aqui você aprende a construir uma carreira 
             de sucesso e impactar vidas através da sua arte.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6">
           {benefits.map((benefit, index) => (
             <div
               key={index}
-              className="card-premium group hover:-translate-y-2 transition-all duration-300"
-              style={{ animationDelay: `${index * 50}ms` }}
+              className="card-premium group animate-fade-in"
+              style={{ animationDelay: `${index * 40}ms` }}
             >
-              <div className="flex flex-col items-center text-center space-y-4">
-                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                  <benefit.icon className="w-7 h-7 text-foreground" />
+              <div className="flex flex-col items-center text-center space-y-3 md:space-y-4">
+                <div className="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-md">
+                  <benefit.icon className="w-6 h-6 md:w-7 md:h-7 text-white" />
                 </div>
                 
-                <h3 className="text-xl font-heading font-semibold">
+                <h3 className="text-lg md:text-xl font-heading font-semibold leading-snug">
                   {benefit.title}
                 </h3>
                 
-                <p className="text-sm text-muted-foreground leading-relaxed">
+                <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
                   {benefit.description}
                 </p>
               </div>
