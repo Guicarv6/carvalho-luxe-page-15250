@@ -33,7 +33,7 @@ const Authority = () => {
       <div className="container-custom relative z-10">
         <div className="text-center mb-16 md:mb-20 animate-fade-in max-w-4xl mx-auto">
           <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground leading-relaxed px-6">
-            O método <span className="font-bold text-primary">Lash Premium 2.0</span> já ajudou centenas de mulheres 
+            O método <span className="font-bold text-primary">Golden Lash</span> já ajudou centenas de mulheres 
             a construírem <span className="font-bold text-foreground">renda, autoestima e propósito</span> — com cílios de alto 
             padrão e atendimento inesquecível.
           </p>

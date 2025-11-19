@@ -27,27 +27,24 @@ const Story = () => {
           <div className="space-y-7 md:space-y-9 animate-slide-up order-1 lg:order-2">
             <div className="inline-flex items-center gap-3 px-6 md:px-7 py-3 md:py-3.5 rounded-full glass-card shadow-glass">
               <Sparkles className="w-5 h-5 text-primary animate-sparkle" />
-              <span className="font-bold text-sm md:text-base text-foreground tracking-wide">Minha História</span>
+              <span className="font-bold text-sm md:text-base text-foreground tracking-wide">Danielly Carvalho - Sua Professora e Mentora</span>
             </div>
             <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-heading font-bold leading-[1.08] tracking-tight">
-              De sonho à <span className="text-gradient drop-shadow-md">realidade</span>
+              "Eu também comecei do zero, <span className="text-gradient drop-shadow-md">cheia de dúvidas..."</span>
             </h2>
             <div className="space-y-6 md:space-y-7 text-lg md:text-xl text-muted-foreground leading-relaxed">
-              <p className="text-xl md:text-2xl font-light italic text-foreground/90 backdrop-blur-sm">"Eu comecei exatamente onde você está agora..."</p>
-              <p>Cheia de dúvidas, insegurança e sem saber se realmente conseguiria viver do que amava. 
-                Mas descobri que <span className="font-bold text-foreground">técnica + propósito + mentalidade</span> podem 
-                transformar não apenas olhares, mas vidas inteiras.</p>
-              <p>Hoje, depois de <span className="font-bold text-foreground">formar mais de 300 profissionais</span> e 
-                transformar milhares de olhares, eu sei que você também pode alcançar a <span className="font-bold text-foreground">liberdade financeira</span> e 
-                a <span className="font-bold text-foreground">realização profissional</span> que merece.</p>
+              <p>Hoje você me vê como especialista, mas no começo, eu tremia a mão. Eu não sabia qual 
+                cola usar, não tinha estúdio chique e morria de medo de errar.</p>
+              <p>Mas eu persisti e desenvolvi uma técnica que facilita o aprendizado.</p>
+              <p>Minha missão hoje não é apenas formar "Lash Designers", é mostrar para mulheres comuns que 
+                elas podem ter seu próprio dinheiro, trabalhar nos seus horários e ter orgulho do que fazem.</p>
               <div className="premium-card rounded-2xl p-6 md:p-8 border-l-4 border-primary hover:scale-[1.02] transition-transform duration-300">
-                <p className="text-xl md:text-2xl font-bold text-foreground mb-3">Você não precisa fazer isso sozinha.</p>
-                <p className="text-base md:text-lg font-medium">Vou te guiar em cada passo dessa jornada de transformação.</p>
+                <p className="text-xl md:text-2xl font-bold text-foreground mb-3">Vou pegar na sua mão e te guiar nesse começo.</p>
               </div>
             </div>
             <div className="pt-5 md:pt-6">
               <a href="https://wa.me/5562991109018" target="_blank" rel="noopener noreferrer" className="btn-primary">
-                <span>Transformar minha carreira</span>
+                <span>Quero aprender com a Danielly</span>
                 <Sparkles className="w-6 h-6 group-hover:rotate-12 transition-transform" />
               </a>
             </div>

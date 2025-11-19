@@ -10,39 +10,25 @@ import {
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "Mariana Silva",
-      role: "Lash Designer",
-      text: "O curso da Danielly mudou minha vida! Em 3 meses já tinha minha própria agenda cheia e conquistei minha independência financeira. O método é completo e o suporte incrível.",
+      name: "Camila Santos",
+      role: "começou do zero",
+      text: "Eu nunca tinha trabalhado com beleza. Tinha muito medo de não conseguir. A didática da Dani é perfeita, ela explica tudo com muita paciência. Hoje atendo minhas clientes com segurança!",
       rating: 5,
-      result: "Faturamento de R$ 8k no 3º mês",
-    },
-    {
-      name: "Juliana Costa",
-      role: "Ex-Manicure",
-      text: "Sempre sonhei em ter meu próprio negócio. Com o Lash Premium, realizei esse sonho! A Danielly não ensina só técnica, ela ensina a empreender e a acreditar no nosso potencial.",
-      rating: 5,
-      result: "Abriu seu próprio studio em 6 meses",
+      result: "Começou do zero e hoje atua profissionalmente",
     },
     {
       name: "Fernanda Oliveira",
-      role: "Empresária",
-      text: "Como cliente, me apaixonei pela qualidade do trabalho da Danielly. Depois fiz o curso e hoje tenho uma segunda fonte de renda que adoro! O atendimento dela é referência.",
+      role: "ex-vendedora",
+      text: "Eu queria uma renda extra para ajudar em casa. Comecei atendendo na sala de casa mesmo. O curso se pagou no primeiro mês!",
       rating: 5,
-      result: "Renda extra de R$ 5k mensais",
+      result: "Curso se pagou no 1º mês",
     },
     {
-      name: "Camila Santos",
-      role: "Recém-formada",
-      text: "Estava desempregada e o curso foi meu recomeço. Hoje tenho carteira cheia, clientes fiéis e ganho mais do que ganhava no meu antigo emprego. Gratidão define!",
+      name: "Juliana Costa",
+      role: "Lash Designer",
+      text: "Achava que precisava de muito dinheiro para começar. A Dani me ensinou a montar o kit básico e comecei gastando pouco. Melhor investimento que fiz.",
       rating: 5,
-      result: "Agenda completa em 2 meses",
-    },
-    {
-      name: "Patricia Lima",
-      role: "Lash Artist",
-      text: "Já tinha experiência, mas o método Lash Premium elevou meu trabalho a outro nível. As técnicas exclusivas fazem toda diferença. Minhas clientes notaram a qualidade premium.",
-      rating: 5,
-      result: "Aumentou preço em 40%",
+      result: "Começou com investimento mínimo",
     },
   ];
 
@@ -56,8 +42,8 @@ const Testimonials = () => {
           </div>
           
           <h2 className="text-3xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 md:mb-8 tracking-tight px-4">
-            Elas começaram do zero e{" "}
-            <span className="text-gradient">hoje vivem do Lash</span>
+            Elas também tinham medo.{" "}
+            <span className="text-gradient">Hoje, elas têm uma profissão.</span>
           </h2>
           
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto px-6">
@@ -129,15 +115,15 @@ const Testimonials = () => {
           <p className="text-lg md:text-xl text-muted-foreground mb-7 md:mb-8">
             Seja a próxima história de sucesso
           </p>
-          <a
-            href="https://wa.me/5562991109018"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-gold inline-flex items-center gap-3 text-lg"
-          >
-            <span>Quero Minha Transformação</span>
-            <Star className="w-6 h-6 fill-current" />
-          </a>
+            <a
+              href="https://wa.me/5562991109018"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-gold inline-flex items-center gap-3 text-lg"
+            >
+              <span>Quero ser a próxima</span>
+              <Star className="w-6 h-6 fill-current" />
+            </a>
         </div>
       </div>
     </section>

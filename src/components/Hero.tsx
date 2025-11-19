@@ -28,25 +28,28 @@ const Hero = () => {
 
             <div className="space-y-5 md:space-y-6">
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-heading font-bold leading-[1.05] tracking-tight">
-                Transforme 
-                <span className="block mt-3">olhares em</span>
-                <span className="block mt-3 text-secondary drop-shadow-[0_8px_24px_rgba(232,162,47,0.5)]">oportunidades</span>
+                Sua nova 
+                <span className="block mt-3">profissão</span>
+                <span className="block mt-3 text-secondary drop-shadow-[0_8px_24px_rgba(232,162,47,0.5)]">começa aqui.</span>
               </h1>
               
               <p className="text-lg md:text-xl lg:text-2xl font-light text-white/95 leading-relaxed max-w-xl backdrop-blur-sm">
-                Domine o método <span className="font-bold text-secondary drop-shadow-lg">Lash Premium 2.0</span> e 
-                construa uma carreira de alto padrão com <span className="font-bold drop-shadow-md">liberdade</span> e <span className="font-bold drop-shadow-md">propósito</span>
+                Aprenda a fazer cílios do zero e conquiste sua independência financeira.
+              </p>
+              
+              <p className="text-base md:text-lg text-white/85 leading-relaxed max-w-xl backdrop-blur-sm">
+                Mesmo que você nunca tenha pegado em uma pinça ou tenha pouco dinheiro para investir. O <span className="font-bold text-secondary drop-shadow-lg">Método Golden Lash</span> é o passo a passo seguro para você ter uma renda digna e trabalhar com liberdade.
               </p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="btn-secondary group">
-                <span>Começar agora</span>
+                <span>QUERO COMEÇAR MINHA NOVA CARREIRA</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </a>
               <button className="btn-outline group">
                 <Play className="w-5 h-5 group-hover:scale-110 transition-transform" />
-                <span>Ver resultados</span>
+                <span>Veja quem começou do zero</span>
               </button>
             </div>
 
