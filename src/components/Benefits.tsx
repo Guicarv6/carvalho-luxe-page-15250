@@ -4,43 +4,23 @@ const Benefits = () => {
   const benefits = [
     {
       icon: TrendingUp,
-      title: "Independência Financeira",
-      description: "Construa uma carreira lucrativa e flexível, trabalhando do seu jeito e no seu tempo.",
+      title: "Liberdade",
+      description: "Poder trabalhar de casa ou montar um cantinho no seu quarto.",
     },
     {
       icon: Users,
-      title: "Suporte Exclusivo",
-      description: "Mentorias personalizadas e comunidade de alunas que se apoiam mutuamente.",
+      title: "Flexibilidade",
+      description: "Fazer seus próprios horários para cuidar dos filhos ou estudar.",
     },
     {
       icon: Award,
-      title: "Certificação Reconhecida",
-      description: "Certificado premium que valida sua expertise e abre portas no mercado.",
+      title: "Lucro Rápido",
+      description: "Com poucas clientes por semana, você já ganha mais que um salário mínimo comercial.",
     },
     {
       icon: Heart,
-      title: "Transforme Vidas",
-      description: "Impacte a autoestima e confiança de cada cliente que você atender.",
-    },
-    {
-      icon: Star,
-      title: "Técnicas Premium",
-      description: "Aprenda métodos exclusivos e avançados que destacam seu trabalho.",
-    },
-    {
-      icon: Zap,
-      title: "Resultados Rápidos",
-      description: "Comece a atender com segurança já nas primeiras semanas do curso.",
-    },
-    {
-      icon: Shield,
-      title: "Material Completo",
-      description: "Kit profissional e todo material didático incluído no investimento.",
-    },
-    {
-      icon: Sparkles,
-      title: "Atualização Contínua",
-      description: "Acesso a novos conteúdos e técnicas conforme o mercado evolui.",
+      title: "Realização",
+      description: "A sensação incrível de ver a cliente se olhar no espelho e amar o resultado.",
     },
   ];
 
@@ -48,23 +28,17 @@ const Benefits = () => {
     <section className="section-padding bg-gradient-to-b from-background via-muted/20 to-background">
       <div className="container-custom">
         <div className="text-center mb-16 md:mb-20 animate-fade-in max-w-4xl mx-auto">
-          <div className="inline-flex items-center gap-2 text-secondary mb-5 md:mb-6">
-            <Sparkles className="w-6 h-6 md:w-7 md:h-7" style={{ animation: 'icon-bounce 2s ease-in-out infinite' }} />
-            <span className="text-sm md:text-base font-semibold uppercase tracking-wider">Método Lash Premium</span>
-          </div>
-          
           <h2 className="text-3xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 md:mb-8 tracking-tight px-4">
-            Por Que Escolher o{" "}
-            <span className="text-gradient">Lash Premium?</span>
+            Mais do que uma renda extra.{" "}
+            <span className="text-gradient">Uma nova vida.</span>
           </h2>
           
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-6 leading-relaxed">
-            Um método completo que vai além da técnica. Aqui você aprende a construir uma carreira 
-            de sucesso e impactar vidas através da sua arte.
+            Veja o que a profissão de Lash Designer pode te proporcionar:
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-16 md:mb-20">
           {benefits.map((benefit, index) => (
             <div
               key={index}
@@ -88,16 +62,55 @@ const Benefits = () => {
           ))}
         </div>
 
-        <div className="text-center mt-16 md:mt-20 animate-fade-in">
-          <a
-            href="https://wa.me/5562991109018"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-hero inline-flex items-center gap-3 text-lg"
-          >
-            <span>Quero Transformar Minha Carreira</span>
-            <Sparkles className="w-6 h-6 group-hover:rotate-12 transition-transform" />
-          </a>
+        <div className="max-w-4xl mx-auto">
+          <div className="card-premium mb-10 md:mb-12">
+            <h3 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold mb-6 md:mb-8 text-center">
+              O medo de começar algo novo é normal.{" "}
+              <span className="text-gradient">Mas você não precisa ir sozinha.</span>
+            </h3>
+            
+            <div className="space-y-5 md:space-y-6 text-base md:text-lg text-muted-foreground leading-relaxed">
+              <p className="font-semibold text-foreground">
+                Eu sei o que passa na sua cabeça agora:
+              </p>
+              
+              <ul className="space-y-3 pl-6">
+                <li>"Será que eu vou conseguir aprender?"</li>
+                <li>"Será que preciso gastar muito com material?"</li>
+                <li>"Tenho medo de não ter firmeza nas mãos..."</li>
+              </ul>
+              
+              <p className="font-semibold text-foreground">
+                Fique tranquila. O Método Golden Lash foi desenhado pensando exatamente em você.
+              </p>
+              
+              <p>
+                Eu não vou apenas te "jogar" o conteúdo. Eu vou te ensinar desde como segurar a pinça até o 
+                atendimento da sua primeira cliente.
+              </p>
+              
+              <div className="mt-8 md:mt-10">
+                <p className="font-semibold text-foreground mb-4">Aqui, nós focamos em:</p>
+                <div className="grid md:grid-cols-3 gap-6">
+                  <div className="text-center p-6 bg-background/50 rounded-2xl border border-primary/20">
+                    <div className="text-4xl mb-3">🛡️</div>
+                    <h4 className="font-bold text-foreground mb-2">Segurança</h4>
+                    <p className="text-sm">Você só vai para a prática quando se sentir pronta.</p>
+                  </div>
+                  <div className="text-center p-6 bg-background/50 rounded-2xl border border-primary/20">
+                    <div className="text-4xl mb-3">💰</div>
+                    <h4 className="font-bold text-foreground mb-2">Economia</h4>
+                    <p className="text-sm">Ensino você a começar com um kit básico e barato.</p>
+                  </div>
+                  <div className="text-center p-6 bg-background/50 rounded-2xl border border-primary/20">
+                    <div className="text-4xl mb-3">💵</div>
+                    <h4 className="font-bold text-foreground mb-2">Renda Real</h4>
+                    <p className="text-sm">O objetivo é que você recupere o valor do curso já nos primeiros atendimentos.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

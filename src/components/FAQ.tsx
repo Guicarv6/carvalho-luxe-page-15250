@@ -9,16 +9,20 @@ import { HelpCircle } from "lucide-react";
 const FAQ = () => {
   const faqs = [
     {
-      question: "Nunca fiz um curso antes, posso começar?",
-      answer: "Sim! Esse curso é feito para iniciantes que querem se destacar no mercado. Começamos do zero com técnicas que te preparam para atender com excelência desde o início.",
+      question: "Nunca fiz nada na área da beleza, consigo aprender?",
+      answer: "Sim! O curso foi feito exatamente para quem nunca teve contato com a área. É passo a passo.",
     },
     {
-      question: "Preciso ter material?",
-      answer: "Não, no módulo inicial mostramos tudo que você precisa comprar e como investir certo. Você receberá uma lista completa com orientações sobre cada item necessário para começar.",
+      question: "Preciso ter material caro?",
+      answer: "Não! Eu mostro exatamente o que é essencial para começar sem gastar muito.",
     },
     {
-      question: "É online ou presencial?",
-      answer: "O Lash de Sucesso 2.0 é online com acompanhamento direto da Danielly. Você aprende no seu ritmo, com mentorias ao vivo e suporte constante via WhatsApp.",
+      question: "Tenho medo de tremer a mão, e agora?",
+      answer: "Temos exercícios específicos de coordenação motora para você ganhar firmeza antes de tocar na cliente.",
+    },
+    {
+      question: "O curso tem suporte?",
+      answer: "Sim, você pode mandar suas dúvidas e fotos dos treinos que eu e minha equipe vamos te ajudar.",
     },
   ];
 
@@ -33,13 +37,9 @@ const FAQ = () => {
             </div>
             
             <h2 className="text-3xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 md:mb-8 tracking-tight px-4">
-              Tire Suas{" "}
-              <span className="text-gradient">Dúvidas</span>
+              Dúvidas?{" "}
+              <span className="text-gradient">Vamos resolver agora.</span>
             </h2>
-            
-            <p className="text-lg md:text-xl text-muted-foreground px-6">
-              Respostas para as perguntas mais comuns sobre o curso e atendimentos
-            </p>
           </div>
 
           <Accordion type="single" collapsible className="space-y-4 md:space-y-5">

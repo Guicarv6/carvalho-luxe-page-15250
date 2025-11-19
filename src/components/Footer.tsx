@@ -41,9 +41,7 @@ const Footer = () => {
                 </p>
                 
                 <p className="text-white/75 leading-relaxed text-sm md:text-base">
-                  Minha missão é empoderar mulheres através da arte da beleza premium. 
-                  Com mais de 5 anos de experiência e 300+ profissionais formadas, 
-                  continuo transformando vidas através do método Lash Premium.
+                  Minha missão é ajudar mulheres a conquistarem sua independência financeira com segurança e leveza.
                 </p>
               </div>
 
