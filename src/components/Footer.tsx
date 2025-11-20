@@ -40,9 +40,21 @@ const Footer = () => {
                   "Beleza que transcende o espelho."
                 </p>
                 
-                <p className="text-white/75 leading-relaxed text-sm md:text-base">
-                  Minha missão é ajudar mulheres a conquistarem sua independência financeira com segurança e leveza.
-                </p>
+                <div className="space-y-2">
+                  <p className="text-white/75 leading-relaxed text-sm md:text-base">
+                    Minha missão é ajudar mulheres a conquistarem sua independência financeira com segurança e leveza.
+                  </p>
+                  <p className="text-white/75 text-xs md:text-sm flex items-center gap-2">
+                    <Instagram className="w-4 h-4" />
+                    <a href="https://www.instagram.com/lashdaniellycarvalho/" target="_blank" rel="noopener noreferrer" className="hover:text-secondary transition-colors">
+                      @lashdaniellycarvalho
+                    </a>
+                  </p>
+                  <p className="text-white/75 text-xs md:text-sm flex items-center gap-2">
+                    <MapPin className="w-4 h-4" />
+                    Aparecida de Goiânia – GO
+                  </p>
+                </div>
               </div>
 
               {/* Quick Links */}
@@ -87,8 +99,8 @@ const Footer = () => {
                 </div>
                 <div>
                   <p className="font-semibold mb-1 text-sm md:text-base">Instagram</p>
-                  <a href="#" className="text-white/75 hover:text-secondary transition-colors text-xs md:text-sm">
-                    @daniellycarvalho
+                  <a href="https://www.instagram.com/lashdaniellycarvalho/" target="_blank" rel="noopener noreferrer" className="text-white/75 hover:text-secondary transition-colors text-xs md:text-sm">
+                    @lashdaniellycarvalho
                   </a>
                 </div>
               </div>
@@ -99,7 +111,7 @@ const Footer = () => {
                 </div>
                 <div>
                   <p className="font-semibold mb-1 text-sm md:text-base">Localização</p>
-                  <p className="text-white/75 text-xs md:text-sm">Goiânia, GO</p>
+                  <p className="text-white/75 text-xs md:text-sm">Aparecida de Goiânia – GO</p>
                 </div>
               </div>
             </div>
@@ -116,7 +128,7 @@ const Footer = () => {
                 <MessageCircle className="w-5 h-5 md:w-6 md:h-6" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/lashdaniellycarvalho/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-white/10 hover:bg-secondary/90 flex items-center justify-center transition-all duration-300 hover:scale-110 shadow-sm"
