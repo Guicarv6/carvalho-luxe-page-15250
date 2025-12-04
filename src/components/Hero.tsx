@@ -23,7 +23,7 @@ const Hero = () => {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-secondary shadow-gold"></span>
               </span>
-              <span className="font-semibold text-sm tracking-wide">Nova turma 2025 • Vagas limitadas</span>
+              <span className="font-semibold text-sm tracking-wide">Nova turma 2026 • Vagas limitadas</span>
             </div>
 
             <div className="space-y-5 md:space-y-6">
